@@ -1,0 +1,116 @@
+/* AdminLogin.css */
+
+/* Container for centering the login form */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 60vh !important; 
+    background-color: #f0f2f5; /* Light grey background */
+    padding: 20px;
+  }
+  
+  /* Box containing the login form */
+  .login-box {
+    background-color: #ffffff; /* White background */
+    padding: 40px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 100%;
+    max-width: 400px; /* Maximum width */
+  }
+  
+  /* Title of the login form */
+  .login-title {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 24px;
+    color: #333333; /* Dark grey text */
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: #ff4d4f; /* Red color for errors */
+    text-align: center;
+    margin-bottom: 16px;
+    font-weight: bold;
+  }
+  
+  /* Form styling */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Each form group (label + input) */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Label styling */
+  .form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555555; /* Medium grey text */
+  }
+  
+  /* Input field styling */
+  .form-input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cccccc; /* Light grey border */
+    border-radius: 4px; /* Slightly rounded corners */
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Input focus state */
+  .form-input:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); /* Subtle shadow */
+  }
+  
+  /* Submit button styling */
+  .submit-button {
+    padding: 12px;
+    background-color: #007bff; /* Blue background */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Submit button hover state */
+  .submit-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Disabled button state */
+  .submit-button:disabled {
+    background-color: #a0c4ff; /* Light blue when disabled */
+    cursor: not-allowed;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .login-box {
+      padding: 30px 20px;
+    }
+  
+    .login-title {
+      font-size: 20px;
+    }
+  
+    .form-input {
+      font-size: 14px;
+    }
+  
+    .submit-button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }

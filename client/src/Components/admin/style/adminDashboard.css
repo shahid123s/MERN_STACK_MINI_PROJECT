@@ -1,0 +1,145 @@
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Container for the table */
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Enables horizontal scrolling on small screens */
+    /* padding: 20px; */
+    background-color: #f9f9f9; /* Light background for contrast */
+  }
+  
+  /* Styling the table */
+  .users-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto; /* Centers the table horizontally */
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Table headers */
+  .users-table thead {
+    background-color: #007BFF; /* Primary color for headers */
+    color: #ffffff; /* White text */
+  }
+  
+  .users-table th {
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 14px;
+    text-transform: uppercase; /* Uppercase letters */
+    border-bottom: 2px solid #dddddd; /* Thicker bottom border for headers */
+  }
+  
+  /* Table body rows */
+  .users-table tbody tr {
+    border-bottom: 1px solid #dddddd; /* Thin border between rows */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .users-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3; /* Light grey for even rows */
+  }
+  
+  .users-table tbody tr:hover {
+    background-color: #f1f1f1; /* Slightly darker grey on hover */
+  }
+  
+  /* Table data cells */
+  .users-table td {
+    padding: 12px 15px;
+    font-size: 14px;
+    color: #333333; /* Dark text for readability */
+    vertical-align: middle; /* Aligns content vertically */
+  }
+  
+  /* Profile image styling */
+  .profile-image {
+    width: 150px; /* Set the width */
+    height: 150px; /* Set the height */
+    border-radius: 10px; /* Slightly rounded corners */
+    object-fit: cover; /* Ensure the image covers the area */
+    margin-bottom: 20px; /* Space below the image */
+}
+  /* UsersTable.css */
+
+/* Existing Styles ... */
+
+/* Button Styling */
+.btn {
+    padding: 8px 12px;
+    margin: 0 4px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .update-btn {
+    background-color: #28a745; /* Green */
+    color: #ffffff;
+  }
+  
+  .update-btn:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+  }
+  
+  .delete-btn {
+    background-color: #dc3545; /* Red */
+    color: #ffffff;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+  }
+  
+  /* Responsive Design Adjustments */
+  @media (max-width: 768px) {
+    /* Existing Responsive Styles ... */
+  
+    /* Adjust button size on small screens */
+    .btn {
+      padding: 6px 10px;
+      font-size: 12px;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .users-table thead {
+      display: none; /* Hides table headers on small screens */
+    }
+  
+    .users-table, .users-table tbody, .users-table tr, .users-table td {
+      display: block;
+      width: 100%;
+    }
+  
+    .users-table tr {
+      margin-bottom: 15px;
+    }
+  
+    .users-table td {
+
+      padding-left: 50%;
+      position: relative;
+    }
+  
+    .users-table td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 15px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+      text-align: left;
+      font-weight: bold;
+    }
+  }
